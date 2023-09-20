@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import UserCard from "../common/UserCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function UserDetails() {
     const users = useSelector(state => state.combine.combinedData);
@@ -10,6 +10,10 @@ export default function UserDetails() {
 
     const [isShow, setIsShow] = useState(false);
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log('this is a test for git branch in mywork branch');
+    }, []);
 
     return (
         <main className="user-details">

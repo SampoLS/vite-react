@@ -13,7 +13,6 @@ export default function App() {
 
     useEffect(() => {
         dispatch(combine());
-        console.log('this is for git test');
    }, []);
 
     return (

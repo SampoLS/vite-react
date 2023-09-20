@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import UserCard from "../common/UserCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function UserDetails() {
     const users = useSelector(state => state.combine.combinedData);

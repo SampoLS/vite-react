@@ -13,6 +13,7 @@ export default function App() {
 
     useEffect(() => {
         dispatch(combine());
+        console.log('i add the code')
    }, []);
 
     return (

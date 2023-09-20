@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+</head>
+<body>
+    <input type="checkbox" id="apple" value="apple" />
+    <label for="apple">apple</label>
+    <input id="banana" type="checkbox" value="banana" />
+    <label for="banana">banana</label>
+
+    <script>
+        document.querySelector('#apple').addEventListener('change', (e) => {
+            console.log(e.target.value, e.target.checked);
+        })
+        document.querySelector('#banana').addEventListener('change', (e) => {
+            console.log(e.target.value);
+        })
+    </script>
+</body>
+</html>

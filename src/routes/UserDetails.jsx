@@ -11,12 +11,6 @@ export default function UserDetails() {
     const [isShow, setIsShow] = useState(false);
     const [count, setCount] = useState(0);
 
-    console.log(1);
-
-    useEffect(() => {
-        console.log(2);
-    }, [])
-
     return (
         <main className="user-details">
             <article>

@@ -13,7 +13,6 @@ export default function App() {
 
     useEffect(() => {
         dispatch(combine());
-        console.lo('yes');
    }, []);
 
     return (

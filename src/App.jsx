@@ -13,6 +13,7 @@ export default function App() {
 
     useEffect(() => {
         dispatch(combine());
+        console.log('this is only for testing');
    }, []);
 
     return (
